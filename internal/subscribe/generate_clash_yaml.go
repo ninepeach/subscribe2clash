@@ -97,7 +97,6 @@ func (c *Clash) LoadTemplate(path string, proxies []interface{}) []byte {
 func GenerateClashConfig(proxies []interface{}, conf string) ([]byte, error) {
 	clash := Clash{}
 	OutputFile = conf
-	fmt.Println(conf,"fucking")
 	r := clash.LoadTemplate(OutputFile, proxies)
 	if r == nil {
 		return nil, fmt.Errorf("sublink 返回数据格式不对")

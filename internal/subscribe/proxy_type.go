@@ -102,9 +102,9 @@ type SSD struct {
 }
 
 type Clash struct {
-	Port      int `yaml:"port"`
-	SocksPort int `yaml:"socks-port"`
-	// RedirPort          int                      `yaml:"redir-port"`
+	Port      			int `yaml:"port"`
+	SocksPort 			int `yaml:"socks-port"`
+	RedirPort           int `yaml:"redir-port"`
 	// Authentication     []string                 `yaml:"authentication"`
 	AllowLan           bool   `yaml:"allow-lan"`
 	Mode               string `yaml:"mode"`
